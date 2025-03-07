@@ -1,0 +1,73 @@
+# IDEs
+.idea/
+*.iml
+*.ipr
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local history for VSCode
+.history/
+
+# build VSCode extensions
+*.vsix
+
+# Build systems
+build/
+dist/
+out/
+target/
+*.class
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Other generated files
+*.log
+*.tmp
+*.bak
+Thumbs.db
+
+# Ignore the .aiexclude file itself
+.aiexclude
+
+
+# Local development files
+epubs/
+.genkit/
+node_modules/
+package-lock.json
+
+# Terraform
+.terraform
+.terraform.lock.hcl
+.tfstate
+.tfstate.backup
+
+# Genkit environment
+.genkit/
+
+# tests
+coverage
+
+# Firebase cache & Logs
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log*
+
+# Firebase config
+# Uncomment this if you'd like others to create their own Firebase project.
+# For a team working on the same Firebase project(s), it is recommended to leave
+# it commented so all members can deploy to the same project(s) in .firebaserc.
+.firebaserc
