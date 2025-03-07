@@ -15,8 +15,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 ```
+<a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2Fsapientcoffee%2Fdaily-grind">
+  <img
+    height="32"
+    alt="Continue in IDX"
+    src="https://cdn.idx.dev/btn/continue_light_32.svg">
+</a>
 
-# template-generic-repo
-A template for a generic repository with core files and directories to speed to project setup.
+# The Daily Grind
 
 
