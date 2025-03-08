@@ -32,7 +32,7 @@ const generateTip = ai.defineFlow(
         if (response.text) {
             return { tip: response.text };
         } else {
-            console.error("generateTipPrompt returned null output");
+            console.error("generateTip returned null output");
             return { tip: "Failed to generate tip." }; 
         }
     },

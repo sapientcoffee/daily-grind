@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import * as flows from './flows';
 
 const app = express();
@@ -8,6 +9,18 @@ const apiVersion = '/api/v1';
 
 // Middleware to parse JSON request bodies
 app.use(bodyParser.json());
+
+// Enable CORS for all origins
+app.use(cors({
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'OPTIONS'], // Allow these HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
+}));
+
+// Handle preflight requests
+app.options('*', cors());
+
+
 
 const handleRoot = async (req: express.Request, res: express.Response) => {
     res.status(200).json({ brew: "I'm Alive!" });

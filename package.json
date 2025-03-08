@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "genkit-cli": "^1.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }

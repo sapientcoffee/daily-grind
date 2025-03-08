@@ -26,8 +26,12 @@ limitations under the License.
 
 
 
+## frontend
+
+npm install -g @angular/cli
 
 
+## backend
 npm install genkit @genkit-ai/googleai
 
 npm install -D genkit-cli
