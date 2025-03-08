@@ -25,3 +25,47 @@ limitations under the License.
 # The Daily Grind
 
 
+
+
+
+npm install genkit @genkit-ai/googleai
+
+npm install -D genkit-cli
+
+npx genkit init brew --template typescript
+
+npx genkit flow:run menuSuggestionFlow '"French"'
+
+LatteArt
+brew - be
+
+
+# 🔧 Development
+To get started with development, follow these steps:
+
+Install the required dependencies:
+
+```
+npm install
+```
+Authenticate with Google Cloud:
+
+```
+gcloud init
+gcloud auth application-default login
+```
+
+[OPTIONAL] Setup local environemnt for firebase, select emulators (auth, firesotre)
+
+```
+firebase init
+```
+Start Firebase emulators to allow you to develop the appliction locally
+```
+firebase emulators:start
+```
+Start application
+GenKit is used to orchestrate interactions with LLMs. To run the application locally with GenKit:
+```
+npm run dev
+```
