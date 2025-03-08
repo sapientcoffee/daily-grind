@@ -1,0 +1,57 @@
+/* Basic Reset and Font */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f0e8; /* Light beige background */
+    color: #333;
+  }
+  
+  /* Header Styling */
+  .app-header {
+    background-color: #a0785a; /* Coffee brown */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .app-header h1 {
+    margin-bottom: 5px;
+  }
+  
+  /* Main Content Area */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Curved Rectangle Box */
+  .tip-container {
+    background-color: #fff;
+    border-radius: 20px; /* Adjust for more/less curve */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width */
+  }
+  
+  .tip-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Footer Styling */
+  .app-footer {
+    background-color: #a0785a; /* Coffee brown */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Stick to the bottom */
+    bottom: 0;
+    width: 100%;
+  }
