@@ -1,0 +1,19 @@
+/* footer.component.css */
+.footer-container {
+    background-color: #4A2E0A; /* Dark coffee brown (same as header) */
+    color: #F8F0E3; /* Creamy off-white (same as header) */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow (reversed for footer) */
+    border-top: 3px solid #B58D4F; /* Lighter brown border (same as header, on top) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Match header font */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-text {
+    margin: 0; /* Remove default margins */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
