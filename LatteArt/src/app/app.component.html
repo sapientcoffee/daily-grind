@@ -1,8 +1,13 @@
 <app-header></app-header>
 
-<div class="main-content">
-  <div class="tip-container">
-    <p>{{ tipOfTheDay }}</p>
+<div class="main-content" style="display: flex; justify-content: center; align-items: center; height: calc(100vh - 120px);">
+  <div class="tip-container" style="text-align: center;">
+      <ng-container *ngIf="!isLoggedIn">
+          <button (click)="googleSignIn()">Sign in with Google</button>
+      </ng-container>
+    <ng-container *ngIf="isLoggedIn">
+        <p>{{ tipOfTheDay }}</p>
+    </ng-container>
   </div>
 </div>
 

@@ -10,6 +10,7 @@
     pkgs.yarn
     pkgs.nodePackages.pnpm
     pkgs.util-linux
+    pkgs.jdk17
   ];
 
   # Sets environment variables in the workspace
@@ -20,34 +21,23 @@
       # "vscodevim.vim"
     ];
 
-    # Enable previews
+    workspace = {
+      # Runs when a workspace is first created with this `dev.nix` file
+      onCreate = {
+        npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing || npm i --no-audit --no-progress --timing";
+        # Open editors for the following files by default, if they exist:
+        default.openFiles = [ "src/app/app.component.ts" ];
+      };
+      # To run something each time the workspace is (re)started, use the `onStart` hook
+    };
+    # Enable previews and customize configuration
     previews = {
       enable = true;
       previews = {
-        # web = {
-        #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
-        #   # and show it in IDX's web preview panel
-        #   command = ["npm" "run" "dev"];
-        #   manager = "web";
-        #   env = {
-        #     # Environment variables to set for your server
-        #     PORT = "$PORT";
-        #   };
-        # };
-      };
-    };
-
-    # Workspace lifecycle hooks
-    workspace = {
-      # Runs when a workspace is first created
-      onCreate = {
-        # Example: install JS dependencies from NPM
-        # npm-install = "npm install";
-      };
-      # Runs when the workspace is (re)started
-      onStart = {
-        # Example: start a background task to watch and re-build backend code
-        # watch-backend = "npm run watch-backend";
+        web = {
+          command = ["npm" "--prefix" "./LatteArt" "run" "dev" "--" "--port" "$PORT" "--host" "0.0.0.0"];
+          manager = "web";
+        };
       };
     };
   };
