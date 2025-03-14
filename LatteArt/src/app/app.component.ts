@@ -16,7 +16,7 @@ import { Subscription } from 'rxjs';
 export class AppComponent {
   title = 'Daily Grind';
   isLoggedIn = false;
-  tipOfTheDay: string = '';
+  tipOfTheDay: string = 'Place holder';
 
   constructor( /* private tipService: TipService,*/ public authService: AuthService) {
     
