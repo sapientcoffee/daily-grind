@@ -73,3 +73,12 @@ GenKit is used to orchestrate interactions with LLMs. To run the application loc
 ```
 npm run dev
 ```
+
+# Deploy
+
+1st time
+
+```
+firebase login
+firebase apphosting:backends:get --project cymbal-daily-grind latteart --location us-central1
+```
