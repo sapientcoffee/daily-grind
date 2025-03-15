@@ -10,7 +10,7 @@
     "local": "ts-node src",
     "local:watch": "nodemon src -e ts,json --exec 'npm run local'",
     "dev": "npx genkit start -- npx tsx --watch src/index.ts",
-    "deploy": "gcloud run deploy inkwell --source ."
+    "deploy": "gcloud run deploy brew --source . --project cymbal-daily-grind --region us-central1"
   },
   "keywords": [],
   "author": "",
