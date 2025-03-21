@@ -6,6 +6,16 @@ runConfig:
   # concurrency: 80
   # cpu: 1
   # memoryMiB: 512
+  # vpcAccess:
+   # Default value if omitted
+   #  egress: PRIVATE_RANGES_ONLY
+   #  networkInterfaces:
+   #  # At least one of network and/or subnetwork must be specified
+   #  - network: my-network-id
+   #    subnetwork: my-subnetwork-id
+   # serverless connector (recommended for larger-scale apps where the number of IP addresses is a concern)
+    # egress: ALL_TRAFFIC
+    # connector: connector-id
 
 # Environment variables and secrets.
 # env:
